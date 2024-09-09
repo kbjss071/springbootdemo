@@ -18,7 +18,7 @@ public class SampleController4 {
 		return "/post/SampleController4Form";
 	}
 	
-	@PostMapping("/SampleController4Form")
+	@PostMapping("/Samplecontroller4View")
 	public String userForm(userDTO userDTO, Model model) {
 		
 		// print through user DTO
@@ -29,6 +29,6 @@ public class SampleController4 {
 		// add data to model attribute
 		model.addAttribute("heading", "User Information");
 		
-		return "/post/SampleController4View";
+		return "post/SampleController4View";
 	}
 }
