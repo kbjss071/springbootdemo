@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.firstdemo.dto.userDTO;
 
+
 // Data access layer through templates folder
 
 @Controller
@@ -29,6 +30,6 @@ public class SampleController4 {
 		// add data to model attribute
 		model.addAttribute("heading", "User Information");
 		
-		return "post/SampleController4View";
+		return "/post/SampleController4View";
 	}
 }

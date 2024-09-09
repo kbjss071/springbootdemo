@@ -6,7 +6,28 @@
 </head>
 <body>
 	<div>
-		<h3 th:text=${ heading }></h3>
+		<h3 th:text="${ heading }"></h3>
+		<table cellpadding=10 border=1>
+			<tr>
+				<td>UserName</td>
+				<td>
+				<input type="text" th:value="${userDTO.getUserName()}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>userId</td>
+				<td>
+				<input type="text" th:value="${userDTO.getUserId()}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>UserPhone</td>
+				<td>
+				<input type="text" th:value="${userDTO.getUserPhone()}"/>
+				</td>
+			</tr>
+				
+		</table>
 	</div>
 </body>
 </html>

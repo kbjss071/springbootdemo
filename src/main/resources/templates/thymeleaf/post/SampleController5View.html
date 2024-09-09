@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<h3 th:text="${ heading }"></h3>
+		<table cellpadding=10 border=1>
+			<tr>
+				<td>Title</td>
+				<td>
+				<input type="text" th:value="${bookDTO.getTitle()}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Author</td>
+				<td>
+				<input type="text" th:value="${bookDTO.getAuthor()}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Publisher</td>
+				<td>
+				<input type="text" th:value="${bookDTO.getPublisher()}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Published date</td>
+				<td>
+				<input type="text" th:value="${bookDTO.getPublishdate()}"/>
+				</td>
+			</tr>
+				
+		</table>
+	</div>
+</body>
+</html>
